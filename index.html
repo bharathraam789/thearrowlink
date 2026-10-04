@@ -14,6 +14,7 @@
     </a>
     <nav><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
   </header>
+
   <main>
     <section class="hero">
       <p class="eyebrow">SMART • SECURE • CONNECTED</p>
@@ -24,21 +25,65 @@
         <a class="contact-button whatsapp-button" href="https://wa.me/919121267891" target="_blank" rel="noopener">WhatsApp Us</a>
       </div>
     </section>
+
     <section id="services" class="section">
       <h2>Our Solutions</h2>
       <div class="service-grid">
-        <article><h3>Networking &amp; Broadband</h3><p>FTTH, fiber connectivity, GPON, Wi-Fi and managed network solutions.</p></article>
-        <article><h3>CCTV &amp; Surveillance</h3><p>IP cameras, recording systems, remote monitoring and security integration.</p></article>
-        <article><h3>IP PA &amp; Voice Solutions</h3><p>IP public address, announcement systems, IP phones and cloud calling solutions.</p></article>
-        <article><h3>Smart Solutions</h3><p>Smart home and office automation, solar fencing and connected infrastructure.</p></article>
-        <article><h3>Business Communication</h3><p>Call-center setup, IP PBX and communication infrastructure.</p></article>
-        <article><h3>Fire &amp; Safety</h3><p>Practical safety and security solutions for business and institutional sites.</p></article>
+        <article class="service-card">
+          <img class="service-image" src="https://images.unsplash.com/photo-1558494949cc3f5b8a2c7d6d5?auto=format&fit=crop&w=900&q=80" alt="Networking and broadband" loading="lazy">
+          <div class="service-content">
+            <h3>Networking &amp; Broadband</h3>
+            <p>FTTH, fiber connectivity, GPON, Wi-Fi and managed network solutions.</p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <img class="service-image" src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=900&q=80" alt="CCTV and surveillance" loading="lazy">
+          <div class="service-content">
+            <h3>CCTV &amp; Surveillance</h3>
+            <p>IP cameras, recording systems, remote monitoring and security integration.</p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <img class="service-image" src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80" alt="IP PA and voice solutions" loading="lazy">
+          <div class="service-content">
+            <h3>IP PA &amp; Voice Solutions</h3>
+            <p>IP public address, announcement systems, IP phones and cloud calling solutions.</p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <img class="service-image" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80" alt="Smart office automation" loading="lazy">
+          <div class="service-content">
+            <h3>Smart Solutions</h3>
+            <p>Smart home and office automation, solar fencing and connected infrastructure.</p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <img class="service-image" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80" alt="Business communication solutions" loading="lazy">
+          <div class="service-content">
+            <h3>Business Communication</h3>
+            <p>Call-center setup, IP PBX and communication infrastructure.</p>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <img class="service-image" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80" alt="Fire and safety systems" loading="lazy">
+          <div class="service-content">
+            <h3>Fire &amp; Safety</h3>
+            <p>Practical safety and security solutions for business and institutional sites.</p>
+          </div>
+        </article>
       </div>
     </section>
+
     <section id="about" class="section about">
       <h2>About The Arrow</h2>
       <p>We help customers plan, deploy and maintain dependable technology solutions with a focus on connectivity, security and smart infrastructure.</p>
     </section>
+
     <section id="contact" class="section contact-section">
       <h2>Let’s Talk About Your Project</h2>
       <p>Call or WhatsApp us to discuss your requirements.</p>
@@ -48,6 +93,7 @@
       </div>
     </section>
   </main>
+
   <footer><p>© <span id="year"></span> The Arrow Communications. All rights reserved.</p></footer>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
