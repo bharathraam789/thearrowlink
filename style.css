@@ -82,17 +82,14 @@ body {
   padding: 80px 24px;
   color: var(--white);
   background:
-    radial-gradient(
-      circle at 85% 20%,
-      rgba(217, 169, 40, 0.18),
-      transparent 32%
-    ),
     linear-gradient(
       135deg,
-      var(--navy),
-      var(--navy-light)
-    );
+      rgba(16, 36, 58, 0.80),
+      rgba(25, 58, 89, 0.78)
+    ),
+    url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
   border-bottom: 5px solid var(--gold);
+  background-attachment: scroll;
 }
 
 .eyebrow {
