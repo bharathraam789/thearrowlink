@@ -1,3 +1,314 @@
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#f7f4ed;background:#background: #FFFFFF;;line-height:1.6}.site-header{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:16px clamp(20px,5vw,72px);background:#050505;border-bottom:1px solid #302719}.brand-logo{display:block;width:min(230px,42vw);height:auto;max-height:100px;object-fit:contain}.site-header nav{display:flex;gap:22px;flex-wrap:wrap}.site-header nav a{color:#f8d15c;text-decoration:none;font-weight:700}.hero{min-height:420px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:72px 24px;background:radial-gradient(ellipse at center,#38290c 0%,#17130a 40%,#101010 76%)}.eyebrow{letter-spacing:.18em;color:#f5c84c;font-size:.85rem;font-weight:700}.hero h1{font-size:clamp(2.3rem,6vw,4.5rem);line-height:1.08;margin:10px 0 18px;color:#ffd45a}.hero p:not(.eyebrow){max-width:720px;color:#e0ddd5;font-size:1.1rem}.contact-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:18px}.contact-button{display:inline-block;padding:12px 20px;border-radius:7px;text-decoration:none;font-weight:700}.call-button{background:#f5c542;color:#17120a}.whatsapp-button{background:#168b50;color:white}.section{padding:64px clamp(20px,6vw,90px);max-width:1300px;margin:auto}.section h2{text-align;color:#ffd45a;font-size:clamp(1.8rem,4vw,2.7rem);margin-top:0}.service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.service-grid article{padding:24px;border:1px solid #4b3b1b;border-radius:12px;background:#191919}.service-grid h3{color:#f4cd5a;margin-top:0}.service-grid p,.about p,.contact-section p{color:#d3d0c8}.about,.contact-section{text-align:center}.contact-section{background:#18150e;border-radius:14px;margin-bottom:56px}footer{text-align:center;padding:20px;color:#a8a49a;border-top:1px solid #302719}@media(max-width:760px){.site-header{flex-direction:column}.site-header nav{justify-content:center}.service-grid{grid-template-columns:1fr}.hero{min-height:360px}.section{padding-top:44px;padding-bottom:44px}}
 
+/* =====================================
+   THE ARROW COMMUNICATIONS
+   Premium Navy Blue + Gold Theme
+===================================== */
 
+:root {
+  --navy: #10243A;
+  --navy-light: #193A59;
+  --gold: #D9A928;
+  --gold-light: #F5D778;
+  --background: #F3F6FA;
+  --white: #FFFFFF;
+  --text: #263445;
+  --muted: #5C6877;
+  --border: #DCE3EB;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: var(--background);
+  line-height: 1.7;
+}
+
+/* HEADER */
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 16px clamp(20px, 5vw, 72px);
+  background: var(--navy);
+  border-bottom: 3px solid var(--gold);
+  box-shadow: 0 4px 18px rgba(16, 36, 58, 0.12);
+}
+
+.brand-logo {
+  display: block;
+  width: min(230px, 42vw);
+  height: auto;
+  max-height: 100px;
+  object-fit: contain;
+}
+
+.site-header nav {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.site-header nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.2s ease;
+}
+
+.site-header nav a:hover {
+  color: var(--gold-light);
+}
+
+/* HERO / MAIN BANNER */
+
+.hero {
+  min-height: 460px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 24px;
+  color: var(--white);
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(217, 169, 40, 0.18),
+      transparent 32%
+    ),
+    linear-gradient(
+      135deg,
+      var(--navy),
+      var(--navy-light)
+    );
+  border-bottom: 5px solid var(--gold);
+}
+
+.eyebrow {
+  letter-spacing: 0.18em;
+  color: var(--gold-light);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  max-width: 1000px;
+  font-size: clamp(2.3rem, 6vw, 4.5rem);
+  line-height: 1.12;
+  margin: 10px 0 18px;
+  color: var(--white);
+}
+
+.hero p:not(.eyebrow) {
+  max-width: 760px;
+  color: #E5ECF4;
+  font-size: 1.1rem;
+}
+
+/* CALL AND WHATSAPP BUTTONS */
+
+.contact-actions {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 13px 23px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform 0.2s ease,
+              box-shadow 0.2s ease;
+}
+
+.contact-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+}
+
+.call-button {
+  background: var(--gold);
+  color: #172235;
+}
+
+.whatsapp-button {
+  background: #168B50;
+  color: var(--white);
+}
+
+/* PAGE SECTIONS */
+
+.section {
+  padding: 70px clamp(20px, 6vw, 90px);
+  max-width: 1400px;
+  margin: auto;
+}
+
+.section h2 {
+  text-align: center;
+  color: var(--navy);
+  font-size: clamp(1.9rem, 4vw, 2.7rem);
+  line-height: 1.25;
+  margin-top: 0;
+  margin-bottom: 38px;
+}
+
+.section h2::after {
+  content: "";
+  display: block;
+  width: 66px;
+  height: 4px;
+  margin: 14px auto 0;
+  background: var(--gold);
+  border-radius: 5px;
+}
+
+/* SERVICE CARDS */
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.service-grid article {
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--gold);
+  border-radius: 12px;
+  background: var(--white);
+  box-shadow: 0 5px 20px rgba(16, 36, 58, 0.06);
+  transition: transform 0.25s ease,
+              box-shadow 0.25s ease;
+}
+
+.service-grid article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(16, 36, 58, 0.12);
+}
+
+.service-grid h3 {
+  color: var(--navy);
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+.service-grid p {
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
+/* ABOUT SECTION */
+
+.about {
+  text-align: center;
+  max-width: 1000px;
+}
+
+.about p {
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+/* CONTACT SECTION */
+
+.contact-section {
+  text-align: center;
+  background: var(--navy);
+  color: var(--white);
+  border: 1px solid #284967;
+  border-radius: 16px;
+  margin-bottom: 60px;
+  padding: 50px 24px;
+}
+
+.contact-section h2 {
+  color: var(--white);
+}
+
+.contact-section p {
+  color: #E1E8F0;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  padding: 24px 20px;
+  color: #D8E1EB;
+  background: var(--navy);
+  border-top: 3px solid var(--gold);
+}
+
+/* TABLET */
+
+@media (max-width: 950px) {
+  .service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .site-header {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .site-header {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .brand-logo {
+    width: min(210px, 75vw);
+  }
+
+  .site-header nav {
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .hero {
+    min-height: 380px;
+    padding: 60px 20px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .service-grid article {
+    padding: 23px;
+  }
+
+  .contact-section {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
