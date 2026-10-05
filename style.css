@@ -207,7 +207,7 @@ body {
 .service-grid article:nth-child(1) {
   background:
     linear-gradient(180deg, rgba(16, 36, 58, 0.08), rgba(16, 36, 58, 0.56)),
-    url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80') center/cover no-repeat;
+    url(images/networking-broadband.png) center/cover no-repeat;
 }
 
 .service-grid article:nth-child(2) {
