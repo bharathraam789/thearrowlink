@@ -184,94 +184,91 @@ body {
   gap: 22px;
 }
 
-.service-grid article {
-  padding: 0;
+.service-card {
   border: 1px solid var(--border);
   border-top: 4px solid var(--gold);
   border-radius: 12px;
   background: var(--white);
   box-shadow: 0 5px 20px rgba(16, 36, 58, 0.06);
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
   transition: transform 0.25s ease,
               box-shadow 0.25s ease;
-  min-height: 260px;
-  display: flex;
-  align-items: flex-end;
 }
 
-.service-grid article:hover {
+.service-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 28px rgba(16, 36, 58, 0.12);
 }
 
-.service-grid article:nth-child(1) {
-  background:
-    linear-gradient(180deg, rgba(16, 36, 58, 0.08), rgba(16, 36, 58, 0.56)),
-    url(networking-broadband.png) center/cover no-repeat;
+.service-card-image {
+  width: 100%;
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid var(--border);
 }
 
-.service-grid article:nth-child(2) {
-  background:
-    linear-gradient(180deg, rgba(16, 36, 58, 0.12), rgba(16, 36, 58, 0.52)),
-    url("CCTV & Surveillance.png") center/cover no-repeat;
+.service-card--networking .service-card-image {
+  background-image:
+    linear-gradient(180deg, rgba(16, 36, 58, 0.10), rgba(16, 36, 58, 0.45)),
+    url('networking-broadband.png');
 }
 
-.service-grid article:nth-child(3) {
-  background:
-    linear-gradient(180deg, rgba(16, 36, 58, 0.10), rgba(16, 36, 58, 0.54)),
-    url('IP PA and Voice Solutions Banner.png') center/cover no-repeat;
+.service-card--cctv .service-card-image {
+  background-image:
+    linear-gradient(180deg, rgba(16, 36, 58, 0.10), rgba(16, 36, 58, 0.45)),
+    url('CCTV & Surveillance.png');
 }
 
-.service-grid article:nth-child(4) {
-  background:
-    linear-gradient(180deg, rgba(16, 36, 58, 0.10), rgba(16, 36, 58, 0.54)),
-    url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80') center/cover no-repeat;
+.service-card--voice .service-card-image {
+  background-image:
+    linear-gradient(180deg, rgba(16, 36, 58, 0.10), rgba(16, 36, 58, 0.45)),
+    url('IP PA and Voice Solutions Banner.png');
 }
 
-.service-grid article:nth-child(5) {
-  background:
-    linear-gradient(180deg, rgba(16, 36, 58, 0.12), rgba(16, 36, 58, 0.52)),
-    url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80') center/cover no-repeat;
+.service-card--smart .service-card-image {
+  background-image:
+    linear-gradient(180deg, rgba(16, 36, 58, 0.10), rgba(16, 36, 58, 0.45)),
+    url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80');
 }
 
-.service-grid article:nth-child(6) {
-  background:
-    linear-gradient(180deg, rgba(16, 36, 58, 0.12), rgba(16, 36, 58, 0.52)),
-    url('https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=900&q=80') center/cover no-repeat;
+.service-card--business .service-card-image {
+  background-image:
+    linear-gradient(180deg, rgba(16, 36, 58, 0.10), rgba(16, 36, 58, 0.45)),
+    url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80');
+}
+
+.service-card--safety .service-card-image {
+  background-image:
+    linear-gradient(180deg, rgba(16, 36, 58, 0.10), rgba(16, 36, 58, 0.45)),
+    url('https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=900&q=80');
 }
 
 .service-card-content {
   width: 100%;
-  padding: 24px 22px 26px;
-  background: linear-gradient(180deg, rgba(16, 36, 58, 0.04), rgba(16, 36, 58, 0.38));
+  padding: 22px 22px 26px;
+  background: var(--white);
 }
 
-.service-grid article h3,
-.service-grid article p {
-  color: var(--white);
+.service-card-content h3,
+.service-card-content p {
   margin: 0;
 }
 
-.service-grid h3 {
+.service-card-content h3 {
+  color: var(--navy);
   font-size: 1.2rem;
   line-height: 1.4;
   margin-bottom: 8px;
 }
 
-.service-grid p {
+.service-card-content p {
+  color: var(--muted);
   font-size: 0.95rem;
-}
-
-.service-image {
-  display: block;
-  width: 100%;
-  height: 210px;
-  object-fit: cover;
-  border-bottom: 1px solid var(--border);
-}
-
-.service-content {
-  padding: 24px 22px 26px;
+  line-height: 1.6;
 }
 
 /* ABOUT SECTION */
@@ -438,16 +435,12 @@ footer {
     padding-bottom: 48px;
   }
 
-  .service-card .service-content {
+  .service-card-content {
     padding: 20px 18px 22px;
   }
 
-  .service-image {
+  .service-card-image {
     height: 180px;
-  }
-
-  .service-grid article {
-    min-height: 220px;
   }
 
   .contact-section {
