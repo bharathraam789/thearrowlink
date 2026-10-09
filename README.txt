@@ -1,4 +1,4 @@
-THE ARROW COMMUNICATIONS WEBSITE FILES
+THE ARROW LINK WEBSITE FILES
 
 Files included:
 - index.html: website page
