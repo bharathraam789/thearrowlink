@@ -176,6 +176,7 @@ body {
   border-radius: 5px;
 }
 
+
 /* SERVICE CARDS */
 
 .service-grid {
@@ -185,23 +186,90 @@ body {
 }
 
 .service-grid article {
+  position: relative;
   padding: 0;
   border: 1px solid var(--border);
   border-top: 4px solid var(--gold);
   border-radius: 12px;
-  background: var(--white);
+  background-color: #24364b;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   box-shadow: 0 5px 20px rgba(16, 36, 58, 0.06);
   overflow: hidden;
   transition: transform 0.25s ease,
               box-shadow 0.25s ease;
-  min-height: 260px;
+  height: 310px;
+  min-height: 310px;
+  box-sizing: border-box;
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: stretch;
+}
+
+/* Keep service text inside the card */
+.service-grid article h3 {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 20px 20px 6px;
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 1.35;
+  overflow-wrap: break-word;
+}
+
+/* Service description */
+.service-grid article p {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 0 20px 20px;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 1.6;
+  overflow-wrap: break-word;
+}
+
+/* Dark gradient for readable text */
+.service-grid article::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(16, 36, 58, 0.05) 20%,
+    rgba(16, 36, 58, 0.35) 50%,
+    rgba(16, 36, 58, 0.95) 100%
+  );
+  z-index: 0;
+  pointer-events: none;
 }
 
 .service-grid article:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 28px rgba(16, 36, 58, 0.12);
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .service-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .service-grid article {
+    height: 280px;
+    min-height: 280px;
+  }
 }
 
 .service-grid article:nth-child(1) {
