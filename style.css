@@ -280,7 +280,7 @@ body {
 .service-grid article:nth-child(2) {
   background:
     linear-gradient(180deg, rgba(16, 36, 58, 0.12), rgba(16, 36, 58, 0.52)),
-    url("CCTV & Surveillance.png") center/cover no-repeat;
+    url("Twilight Security Operations Centre.png") center/cover no-repeat;
 }
 
 .service-grid article:nth-child(3) {
